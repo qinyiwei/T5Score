@@ -22,7 +22,7 @@ from transformers import (
 )
 from transformers.trainer_utils import IntervalStrategy, is_main_process
 from transformers.training_args import ParallelMode
-from generative_training.utils import (
+from utils import (
     Seq2SeqDataCollator,
     Seq2SeqDataset,
     MultiDataset,

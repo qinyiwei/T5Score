@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 import transformers
-from discriminative_training.supervised_model import EstimatorT5
+from supervised_model import EstimatorT5
 from transformers import (
     AutoConfig,
     AutoModelForSeq2SeqLM,
@@ -21,11 +21,11 @@ from transformers import (
     set_seed,
     EncoderDecoderModel,
 )
-from discriminative_training.trainer import SupMultiEvalTrainer, EstmMultiEvalTrainer, BrioTrainer
+from trainer import SupMultiEvalTrainer, EstmMultiEvalTrainer, BrioTrainer
 
 from transformers.trainer_utils import is_main_process
 from transformers.training_args import ParallelMode
-from discriminative_training.utils import (
+from utils import (
     Seq2SeqDataCollator,
     Seq2SeqDataset,
     MultiDataset,
