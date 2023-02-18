@@ -37,9 +37,6 @@ optional_arguments=(
     "--logging_first_step"
 )
 
-#export WANDB_PROJECT="XLSum-multilingual"
-#export WANDB_WATCH=false
-#export WANDB_MODE="dryrun"
 export WANDB_DISABLED=true
 
 python "generative_training/pipeline.py" \
